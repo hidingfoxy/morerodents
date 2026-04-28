@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Mouse.label>мышь</Mouse.label>
+	<Mouse.labelPlural>мыши</Mouse.labelPlural>
+	<Mouse.lifeStages.0.label>мышонок</Mouse.lifeStages.0.label>
+	<Mouse.lifeStages.0.labelPlural>мышата</Mouse.lifeStages.0.labelPlural>
+	
+	<Harvest_Mouse.label>мышь-малютка</Harvest_Mouse.label>
+	<Harvest_Mouse.labelPlural>мыши-малютки</Harvest_Mouse.labelPlural>
+	<Harvest_Mouse.lifeStages.0.label>мышонок-малютка</Harvest_Mouse.lifeStages.0.label>
+	<Harvest_Mouse.lifeStages.0.labelPlural>мышата-малютки</Harvest_Mouse.lifeStages.0.labelPlural>
+	
+	<Striped_Mouse.label>полосатая мышь</Striped_Mouse.label>
+	<Striped_Mouse.labelPlural>полосатые мыши</Striped_Mouse.labelPlural>
+	<Striped_Mouse.lifeStages.0.label>полосатый мышонок</Striped_Mouse.lifeStages.0.label>
+	<Striped_Mouse.lifeStages.0.labelPlural>полосатые мышата</Striped_Mouse.lifeStages.0.labelPlural>
+	
+	<Woolly_Mouse.label>шерстистая мышь</Woolly_Mouse.label>
+	<Woolly_Mouse.labelPlural>шерстистые мыши</Woolly_Mouse.labelPlural>
+	<Woolly_Mouse.lifeStages.0.label>шерстистый мышонок</Woolly_Mouse.lifeStages.0.label>
+	<Woolly_Mouse.lifeStages.0.labelPlural>шерстистые мышата</Woolly_Mouse.lifeStages.0.labelPlural>
+	
+	<Maned_Rat.label>косматый хомяк</Maned_Rat.label>
+	<Maned_Rat.labelPlural>косматые хомяки</Maned_Rat.labelPlural>
+	<Maned_Rat.lifeStages.0.label>детеныш косматого хомяка</Maned_Rat.lifeStages.0.label>
+	<Maned_Rat.lifeStages.0.labelPlural>детеныши косматого хомяка</Maned_Rat.lifeStages.0.labelPlural>
+	
+	<Cloud_Rat.label>тонкохвостая мышь</Cloud_Rat.label>
+	<Cloud_Rat.labelPlural>тонкохвостые мыши</Cloud_Rat.labelPlural>
+	<Cloud_Rat.lifeStages.0.label>тонкохвостый мышонок</Cloud_Rat.lifeStages.0.label>
+	<Cloud_Rat.lifeStages.0.labelPlural>тонкохвостые мышата</Cloud_Rat.lifeStages.0.labelPlural>
+	
+	<Mole_Rat.label>голый землекоп</Mole_Rat.label>
+	<Mole_Rat.labelPlural>голые землекопы</Mole_Rat.labelPlural>
+	<Mole_Rat.lifeStages.0.label>детеныш голого землекопа</Mole_Rat.lifeStages.0.label>
+	<Mole_Rat.lifeStages.0.labelPlural>детеныши голого землекопа</Mole_Rat.lifeStages.0.labelPlural>
+	
+	<Jerboa.label>тушканчик</Jerboa.label>
+	<Jerboa.labelPlural>тушканчики</Jerboa.labelPlural>
+	<Jerboa.lifeStages.0.label>детеныш тушканчика</Jerboa.lifeStages.0.label>
+	<Jerboa.lifeStages.0.labelPlural>детеныши тушканчика</Jerboa.lifeStages.0.labelPlural>
+	
+	<Kangaroo_Rat.label>кенгуровый прыгун</Kangaroo_Rat.label>
+	<Kangaroo_Rat.labelPlural>кенгуровые прыгуны</Kangaroo_Rat.labelPlural>
+	<Kangaroo_Rat.lifeStages.0.label>детеныш кенгурового прыгуна</Kangaroo_Rat.lifeStages.0.label>
+	<Kangaroo_Rat.lifeStages.0.labelPlural>детеныши кенгурового прыгуна</Kangaroo_Rat.lifeStages.0.labelPlural>
+	
+	<Hamster.label>хомяк</Hamster.label>
+	<Hamster.labelPlural>хомяки</Hamster.labelPlural>
+	<Hamster.lifeStages.0.label>детеныш хомяка</Hamster.lifeStages.0.label>
+	<Hamster.lifeStages.0.labelPlural>детеныши хомяка</Hamster.lifeStages.0.labelPlural>
+	
+	
+</LanguageData>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Mouse.label>мышь</Mouse.label>
+	<Mouse.description>Обычная домовая мышь (Mus musculus). Все знают, что такое мышь.</Mouse.description>
+	<Mouse.race.meatLabel>мясо грызуна</Mouse.race.meatLabel>
+	
+	<Harvest_Mouse.label>мышь-малютка</Harvest_Mouse.label>
+	<Harvest_Mouse.description>Евразийская мышь-малютка (Micromys minutus). Самый маленький вид мышей в своей среде обитания на Земле, взрослая особь может весить всего 4 грамма. Известна тем, что строит небольшие сферические гнезда из травы.</Harvest_Mouse.description>
+		
+	<Striped_Mouse.label>полосатая мышь</Striped_Mouse.label>
+	<Striped_Mouse.description>Полосатая травяная мышь (Lemniscomys striatus). Обитает в травянистых равнинах континента Африка.</Striped_Mouse.description>
+		
+	<Woolly_Mouse.label>шерстистая мышь</Woolly_Mouse.label>
+	<Woolly_Mouse.description>Шерстистая мышь (Mus oiostolus). Созданная безумным гением на планете Земля, шерстистая мышь — это пушистый вариант домовой мыши. Ее длинная теплая шерсть позволяет ей выживать в холодном климате.</Woolly_Mouse.description>
+		
+	<Maned_Rat.label>косматый хомяк</Maned_Rat.label>
+	<Maned_Rat.description>Косматый хомяк или африканская хохлатая крыса (Lophiomys imhausi). Единственный известный ядовитый грызун на Земле, поскольку она наносит токсины растений на свою шерсть, чтобы отпугивать хищников.</Maned_Rat.description>
+		
+	<Cloud_Rat.label>тонкохвостая мышь</Cloud_Rat.label>
+	<Cloud_Rat.description>Тонкохвостая или облачная мышь (Phloeomyini). Древолазающие грызуны из тропических лесов Земли. Самые крупные представители вида могут весить более 2 кг.</Cloud_Rat.description>
+	
+	<Mole_Rat.label>голый землекоп</Mole_Rat.label>
+	<Mole_Rat.description>Голый землекоп (Heterocephalus glaber). Бесшерстный роющий грызун, обитающий на континенте Африка. Известен своей высокой устойчивостью к таким заболеваниям, как рак, и неспособностью чувствовать боль.</Mole_Rat.description>
+	
+	<Jerboa.label>тушканчик</Jerboa.label>
+	<Jerboa.description>Тушканчики (Dipodidae) обычно живут в жарких пустынях. Это быстрые прыгающие грызуны, способные бегать со скоростью до 24 км/ч.</Jerboa.description>
+	
+	<Kangaroo_Rat.label>кенгуровый прыгун</Kangaroo_Rat.label>
+	<Kangaroo_Rat.description>Кенгуровые прыгуны (Dipodomys) — это мелкие грызуны с североамериканского континента Земли. Они способны подпрыгивать на высоту до 2,7 метра и быстро менять направление, убегая от хищников.</Kangaroo_Rat.description>
+	
+	<Hamster.label>хомяк</Hamster.label>
+	<Hamster.description>Хомяк (Cricetidae). Небольшой грызун, один из самых популярных домашних животных, которых держат люди по всей Земле.</Hamster.description>
+		
+</LanguageData>

@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ====================================================== -->
+
+  <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="BaseRodent">
+    <devNote>rodent</devNote>
+    <statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+      <MarketValue>10</MarketValue>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
+      <Wildness>0.8</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>1.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>left claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>1.6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>1.6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <baseBodySize>0.18</baseBodySize>
+      <baseHungerRate>0.115</baseHungerRate>
+      <baseHealthScale>0.4</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Light</leatherDef>
+      <trainability>None</trainability>
+      <petness>0.08</petness>
+      <mateMtbHours>8</mateMtbHours>
+      <gestationPeriodDays>5.661</gestationPeriodDays>
+      <soundEating>Rodent_Eat</soundEating>
+      <litterSizeCurve>
+        <points>
+          <li>(1.0, 0)</li>
+          <li>(1.5, 1)</li>
+          <li>(2.0, 1)</li>
+          <li>(2.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>3</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.1</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2222</minAge>
+          <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+          <soundDeath>Pawn_Rodent_Death</soundDeath>
+          <soundCall>Pawn_Rodent_Call</soundCall>
+          <soundAngry>Pawn_Rodent_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef Abstract="True" ParentName="AnimalKindBase" Name="RodentBase">
+    <combatPower>5</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+  </PawnKindDef>
+
+ 
+   <!--=================== MOUSE ======================= -->
+
+
+  <ThingDef ParentName="BaseRodent">
+    <defName>Mouse</defName>
+    <label>mouse</label>
+    <description>Regular house mouse (Mus musculus). Everyone knows what a mouse is.</description>
+    <uiIconScale>1.5</uiIconScale>
+    <race>
+	  <meatLabel>rodent meat</meatLabel>
+	  <wildBiomes>
+		<BorealForest>0.1</BorealForest>
+		<ColdBog>0.03</ColdBog>
+		<TemperateForest>0.3</TemperateForest>
+		<TemperateSwamp>0.2</TemperateSwamp>
+	  </wildBiomes>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.07)</li>
+        <li>(0.19, 0, 0)</li>
+        <li>(0.0, 0, -0.07)</li>
+        <li>(-0.19, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RodentBase">
+    <defName>Mouse</defName>
+    <label>mouse</label>
+	<labelPlural>mice</labelPlural>
+    <race>Mouse</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Mouse</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Mouse</texPath>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Mouse</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+   <!--=================== HARVEST MOUSE ======================= -->
+
+
+  <ThingDef ParentName="BaseRodent">
+    <defName>Harvest_Mouse</defName>
+    <label>harvest mouse</label>
+    <description>Eurasian harvest mouse (Micromys minutus). Smallest mouse species in its habitat back on Earth, adult may weigh as little as 4 grams. Known for building small spherical nests out of grass.</description>
+    <uiIconScale>1.5</uiIconScale>
+    <race>
+	  <useMeatFrom>Mouse</useMeatFrom>
+	  <wildBiomes>
+		<TemperateForest>0.08</TemperateForest>
+		<TemperateSwamp>0.03</TemperateSwamp>
+		<AridShrubland>0.05</AridShrubland>
+	  </wildBiomes>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.07)</li>
+        <li>(0.19, 0, 0)</li>
+        <li>(0.0, 0, -0.07)</li>
+        <li>(-0.19, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RodentBase">
+    <defName>Harvest_Mouse</defName>
+    <label>harvest mouse</label>
+	<labelPlural>harvest mice</labelPlural>
+    <race>Harvest_Mouse</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Harvest_Mouse/Harvest_Mouse</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Harvest_Mouse/Harvest_Mouse</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Harvest_Mouse/Harvest_Mouse</texPath>
+          <drawSize>1.3</drawSize>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+   <!--=================== STRIPED MOUSE ======================= -->
+
+
+  <ThingDef ParentName="BaseRodent">
+    <defName>Striped_Mouse</defName>
+    <label>striped mouse</label>
+    <description>Striped grass mouse (Lemniscomys striatus). Found in the grasslands of the Earth's continent of Africa.</description>
+    <uiIconScale>1.5</uiIconScale>
+    <race>
+	  <useMeatFrom>Mouse</useMeatFrom>
+	  <wildBiomes>
+		<Desert>0.05</Desert>
+		<AridShrubland>0.1</AridShrubland>
+		<TemperateForest>0.05</TemperateForest>
+	  </wildBiomes>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.07)</li>
+        <li>(0.19, 0, 0)</li>
+        <li>(0.0, 0, -0.07)</li>
+        <li>(-0.19, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RodentBase">
+    <defName>Striped_Mouse</defName>
+    <label>striped mouse</label>
+	<labelPlural>striped mice</labelPlural>
+    <race>Striped_Mouse</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Striped_Mouse/Striped_Mouse</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Striped_Mouse/Striped_Mouse</texPath>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Striped_Mouse/Striped_Mouse</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+   <!--=================== WOOLLY MOUSE ======================= -->
+
+
+  <ThingDef ParentName="BaseRodent">
+    <defName>Woolly_Mouse</defName>
+    <label>woolly mouse</label>
+    <description>Woolly mouse (Mus oiostolus). Created by a mad genius on the planet Earth, woolly mouse is a furry variant of the house mouse. Their long warm fur allows them to stay in the colder climates.</description>
+    <uiIconScale>1.5</uiIconScale>
+    <race>
+	  <useMeatFrom>Mouse</useMeatFrom>
+	  <wildBiomes>
+		<BorealForest>0.1</BorealForest>
+		<ColdBog>0.1</ColdBog>
+		<TemperateForest>0.01</TemperateForest>
+		<Tundra>0.2</Tundra>
+	  </wildBiomes>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.07)</li>
+        <li>(0.19, 0, 0)</li>
+        <li>(0.0, 0, -0.07)</li>
+        <li>(-0.19, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+	<statBases>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>20</ComfyTemperatureMax>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_Shearable">
+        <woolDef>WoolBase</woolDef>
+        <shearIntervalDays>6</shearIntervalDays>
+        <woolAmount>3</woolAmount>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RodentBase">
+    <defName>Woolly_Mouse</defName>
+    <label>woolly mouse</label>
+	<labelPlural>woolly mice</labelPlural>
+    <race>Woolly_Mouse</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Woolly_Mouse/Woolly_Mouse</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Woolly_Mouse/Woolly_Mouse</texPath>
+          <drawSize>1.35</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Woolly_Mouse/Woolly_Mouse</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+   <!--=================== MANED RAT ======================= -->
+
+
+  <ThingDef ParentName="BaseRodent">
+    <defName>Maned_Rat</defName>
+    <label>maned rat</label>
+    <description>Maned rat or African crested rat (Lophiomys imhausi). The only known poisonous rodent from Earth, as it smears toxins from plants on it's fur to fend off predators.</description>
+    <uiIconScale>1.5</uiIconScale>
+    <race>
+	  <useMeatFrom>Mouse</useMeatFrom>
+	  <wildBiomes>
+		<TemperateForest>0.05</TemperateForest>
+		<TemperateSwamp>0.03</TemperateSwamp>
+		<AridShrubland>0.02</AridShrubland>
+	  </wildBiomes>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.07)</li>
+        <li>(0.19, 0, 0)</li>
+        <li>(0.0, 0, -0.07)</li>
+        <li>(-0.19, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+	<tools>
+	  <li>
+        <label>poisonous-claws</label>
+        <capacities>
+          <li>ScratchToxic</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+      </li>
+	  <li>
+        <label>poisonous-claws</label>
+        <capacities>
+          <li>ScratchToxic</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+		<chanceFactor>0.5</chanceFactor>
+      </li>
+	</tools>
+	<tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RodentBase">
+    <defName>Maned_Rat</defName>
+    <label>maned rat</label>
+	<labelPlural>maned rats</labelPlural>
+    <race>Maned_Rat</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Maned_Rat/Maned_Rat</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Maned_Rat/Maned_Rat</texPath>
+          <drawSize>1.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Maned_Rat/Maned_Rat</texPath>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+   <!--=================== CLOUD RAT ======================= -->
+
+
+  <ThingDef ParentName="BaseRodent">
+    <defName>Cloud_Rat</defName>
+    <label>cloud rat</label>
+    <description>Cloud rat or cloudrunner (Phloeomyini). Tree climbing rodents from tropical forests of Earth. The biggest of the species can weigh over 2 kg.</description>
+    <uiIconScale>1.5</uiIconScale>
+    <race>
+	  <useMeatFrom>Mouse</useMeatFrom>
+	  <wildBiomes>
+		<TropicalRainforest>0.6</TropicalRainforest>
+		<TropicalSwamp>0.4</TropicalSwamp>
+		<TemperateForest>0.02</TemperateForest>
+	  </wildBiomes>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.07)</li>
+        <li>(0.19, 0, 0)</li>
+        <li>(0.0, 0, -0.07)</li>
+        <li>(-0.19, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+	<tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RodentBase">
+    <defName>Cloud_Rat</defName>
+    <label>cloud rat</label>
+	<labelPlural>cloud rats</labelPlural>
+    <race>Cloud_Rat</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cloud_Rat/Cloud_Rat</texPath>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cloud_Rat/Cloud_Rat</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cloud_Rat/Cloud_Rat</texPath>
+          <drawSize>1.8</drawSize>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+          <drawSize>1.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+   <!--=================== MOLE-RAT ======================= -->
+
+
+  <ThingDef ParentName="BaseRodent">
+    <defName>Mole_Rat</defName>
+    <label>mole-rat</label>
+    <description>Naked mole-rat also known as sand puppy (Heterocephalus glaber). Fur-less burrowing rodent native to Earth's continent of Africa. Known for its high resistances to deseases such as cancer and inability to feel pain.</description>
+    <uiIconScale>1.5</uiIconScale>
+    <race>
+	  <useMeatFrom>Mouse</useMeatFrom>
+	  <wildBiomes>
+		<ExtremeDesert>0.1</ExtremeDesert>
+		<Desert>0.3</Desert>
+		<AridShrubland>0.15</AridShrubland>
+	  </wildBiomes>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.07)</li>
+        <li>(0.19, 0, 0)</li>
+        <li>(0.0, 0, -0.07)</li>
+        <li>(-0.19, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+	<statBases>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+    </statBases>
+	<tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RodentBase">
+    <defName>Mole_Rat</defName>
+    <label>cloud rat</label>
+	<labelPlural>cloud rats</labelPlural>
+    <race>Mole_Rat</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mole_Rat/Mole_Rat</texPath>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mole_Rat/Mole_Rat</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mole_Rat/Mole_Rat</texPath>
+          <drawSize>1.85</drawSize>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Rat/Dessicated_Rat</texPath>
+          <drawSize>1.85</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+   <!--=================== JERBOA ======================= -->
+
+
+  <ThingDef ParentName="BaseRodent">
+    <defName>Jerboa</defName>
+    <label>jerboa</label>
+    <description>Jerboa (Dipodidae) tend to live in hot deserts. They are fast hopping rodents that can run up to 24 km/h.</description>
+    <uiIconScale>1.5</uiIconScale>
+    <race>
+	  <useMeatFrom>Mouse</useMeatFrom>
+	  <wildBiomes>
+		<ExtremeDesert>0.1</ExtremeDesert>
+		<Desert>0.3</Desert>
+		<AridShrubland>0.05</AridShrubland>
+	  </wildBiomes>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.07)</li>
+        <li>(0.19, 0, 0)</li>
+        <li>(0.0, 0, -0.07)</li>
+        <li>(-0.19, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+	<statBases>
+      <MoveSpeed>8.0</MoveSpeed>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+    </statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RodentBase">
+    <defName>Jerboa</defName>
+    <label>jerboa</label>
+	<labelPlural>jerboas</labelPlural>
+    <race>Jerboa</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jerboa/Jerboa</texPath>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jerboa/Dessicated_Jerboa</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jerboa/Jerboa</texPath>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jerboa/Dessicated_Jerboa</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jerboa/Jerboa</texPath>
+          <drawSize>1.65</drawSize>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jerboa/Dessicated_Jerboa</texPath>
+          <drawSize>1.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+   <!--=================== KANGAROO RAT ======================= -->
+
+
+  <ThingDef ParentName="BaseRodent">
+    <defName>Kangaroo_Rat</defName>
+    <label>kangaroo rat</label>
+    <description>Kangaroo rat (Dipodomys) are small rodents from North American continent of the planet Earth. They can hop up to 9 feet into the air and rapidly change direction when they run away from predators.</description>
+    <uiIconScale>1.5</uiIconScale>
+    <race>
+	  <useMeatFrom>Mouse</useMeatFrom>
+	  <wildBiomes>
+		<Desert>0.03</Desert>
+		<AridShrubland>0.7</AridShrubland>
+		<TemperateForest>0.5</TemperateForest>
+	  </wildBiomes>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.07)</li>
+        <li>(0.19, 0, 0)</li>
+        <li>(0.0, 0, -0.07)</li>
+        <li>(-0.19, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+	<statBases>
+      <MoveSpeed>6.0</MoveSpeed>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
+    </statBases>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RodentBase">
+    <defName>Kangaroo_Rat</defName>
+    <label>kangaroo rat</label>
+	<labelPlural>kangaroo rats</labelPlural>
+    <race>Kangaroo_Rat</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kangaroo_Rat/Kangaroo_Rat</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jerboa/Dessicated_Jerboa</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kangaroo_Rat/Kangaroo_Rat</texPath>
+          <drawSize>1.45</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jerboa/Dessicated_Jerboa</texPath>
+          <drawSize>1.45</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kangaroo_Rat/Kangaroo_Rat</texPath>
+          <drawSize>1.65</drawSize>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Jerboa/Dessicated_Jerboa</texPath>
+          <drawSize>1.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+   <!--=================== HAMSTER ======================= -->
+
+
+  <ThingDef ParentName="BaseRodent">
+    <defName>Hamster</defName>
+    <label>hamster</label>
+    <description>Hamster (Cricetidae). Small rodent that is among most popular pets kept by humans everywhere on Earth.</description>
+    <uiIconScale>1.5</uiIconScale>
+	<statBases>
+      <Wildness>0.4</Wildness>
+    </statBases>
+    <race>
+	  <useMeatFrom>Mouse</useMeatFrom>
+	  <wildBiomes>
+		<TemperateForest>0.2</TemperateForest>
+		<TemperateSwamp>0.08</TemperateSwamp>
+		<AridShrubland>0.05</AridShrubland>
+	  </wildBiomes>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.07)</li>
+        <li>(0.19, 0, 0)</li>
+        <li>(0.0, 0, -0.07)</li>
+        <li>(-0.19, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="RodentBase">
+    <defName>Hamster</defName>
+    <label>hamster</label>
+	<labelPlural>hamsters</labelPlural>
+    <race>Hamster</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hamster/Hamster</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hamster/Hamster</texPath>
+          <drawSize>1.25</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hamster/Hamster</texPath>
+          <drawSize>1.4</drawSize>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mouse/Dessicated_Mouse</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+</Defs>

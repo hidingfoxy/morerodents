@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Mouse.label>mus</Mouse.label>
+	<Mouse.description>Vanlig husmus (Mus musculus). Alla vet vad en mus är.</Mouse.description>
+	<Mouse.race.meatLabel>мясо грызуна</Mouse.race.meatLabel>
+	
+	<Harvest_Mouse.label>dvärgmus</Harvest_Mouse.label>
+	<Harvest_Mouse.description>Eurasisk dvärgmus (Micromys minutus). Den minsta musarten i sin livsmiljö på jorden, en vuxen mus kan väga så lite som 4 gram. Känd för att bygga små sfäriska bon av gräs.</Harvest_Mouse.description>
+		
+	<Striped_Mouse.label>randigmus</Striped_Mouse.label>
+	<Striped_Mouse.description>Randig gräsmus (Lemniscomys striatus). Finns i gräsmarkerna på Jordens afrikanska kontinent.</Striped_Mouse.description>
+		
+	<Woolly_Mouse.label>ullmus</Woolly_Mouse.label>
+	<Woolly_Mouse.description>Ullmus (Mus oiostolus). Skapad av ett galet geni på planeten jorden, ullmusen en lurvig variant av husmusen. Deras långa varma päls gör att de kan hålla sig i kallare klimat.</Woolly_Mouse.description>
+		
+	<Maned_Rat.label>manråtta</Maned_Rat.label>
+	<Maned_Rat.description>Manråtta eller afrikansk tofsråtta (Lophiomys imhausi). Den enda kända giftiga gnagaren från Jorden, eftersom den smetar ut gifter från växter på sin päls för att avvisa rovdjur.</Maned_Rat.description>
+		
+	<Cloud_Rat.label>molnråtta</Cloud_Rat.label>
+	<Cloud_Rat.description>Molnråtta eller molnlöpare (Phloeomyini). Trädklättrande gnagare från jordens tropiska skogar. Den största av arterna kan väga över 2 kg.</Cloud_Rat.description>
+	
+	<Mole_Rat.label>nakenråtta</Mole_Rat.label>
+	<Mole_Rat.description>Nakenråtta eller kalråttan, även känd som sandvalp (Heterocephalus glaber). Pälslös, grävande gnagare som är infödd på Jordens afrikanska kontinent. Känd för sin höga motståndskraft mot sjukdomar som cancer och oförmåga att känna smärta.</Mole_Rat.description>
+	
+	<Jerboa.label>springråtta</Jerboa.label>
+	<Jerboa.description>Springråtta eller hoppmöss (Dipodidae) tenderar att leva i heta öknar. De är snabba gnagare som kan springa upp till 24 km/h.</Jerboa.description>
+	
+	<Kangaroo_Rat.label>känguruspringmus</Kangaroo_Rat.label>
+	<Kangaroo_Rat.description>Känguruspringmus (Dipodomys) är små gnagare från den nordamerikanska kontinenten på planeten Jorden. De kan hoppa upp till 2,7 meter upp i luften och snabbt ändra riktning när de flyr från rovdjur.</Kangaroo_Rat.description>
+	
+	<Hamster.label>hamster</Hamster.label>
+	<Hamster.description>Hamster (Cricetidae). Liten gnagare som är bland de mest populära husdjuren som människor haft över hela jorden.</Hamster.description>
+	
+	
+</LanguageData>

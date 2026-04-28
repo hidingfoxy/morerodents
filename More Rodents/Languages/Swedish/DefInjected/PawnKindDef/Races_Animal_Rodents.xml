@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<Mouse.label>mus</Mouse.label>
+	<Mouse.labelPlural>möss</Mouse.labelPlural>
+	
+	<Harvest_Mouse.label>dvärgmus</Harvest_Mouse.label>
+	<Harvest_Mouse.labelPlural>dvärgmöss</Harvest_Mouse.labelPlural>
+	
+	<Striped_Mouse.label>randigmus</Striped_Mouse.label>
+	<Striped_Mouse.labelPlural>randingamöss</Striped_Mouse.labelPlural>
+	
+	<Woolly_Mouse.label>ullmus</Woolly_Mouse.label>
+	<Woolly_Mouse.labelPlural>ulligamöss</Woolly_Mouse.labelPlural>
+	
+	<Maned_Rat.label>manråtta</Maned_Rat.label>
+	<Maned_Rat.labelPlural>manråttor</Maned_Rat.labelPlural>
+	
+	<Cloud_Rat.label>molnråtta</Cloud_Rat.label>
+	<Cloud_Rat.labelPlural>molnråttor</Cloud_Rat.labelPlural>
+	
+	<Mole_Rat.label>nakenråtta</Mole_Rat.label>
+	<Mole_Rat.labelPlural>nakenråttor</Mole_Rat.labelPlural>
+	
+	<Jerboa.label>springråtta</Jerboa.label>
+	<Jerboa.labelPlural>springråttor</Jerboa.labelPlural>
+	
+	<Kangaroo_Rat.label>känguruspringmus</Kangaroo_Rat.label>
+	<Kangaroo_Rat.labelPlural>känguruspringmöss</Kangaroo_Rat.labelPlural>
+	
+	<Hamster.label>hamster</Hamster.label>
+	<Hamster.labelPlural>hamstrar</Hamster.labelPlural>
+	
+	
+</LanguageData>
